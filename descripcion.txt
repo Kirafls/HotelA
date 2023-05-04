@@ -1,0 +1,17 @@
+Componentes a crear:
+    Menubar
+    Inicio
+    Acerca de
+    Mostrar
+    Reserbar
+Modelo del hotel:
+    50 habitaciones de las cuales:
+        40 comunes
+        10 suit
+inteface a usar:
+    reserva:
+        id: number
+        dia: date
+        habitacion: number 1 a 50
+Servicios creados:
+    Alertyfy 
