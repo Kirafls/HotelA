@@ -2,7 +2,7 @@
 Escribir en la consola
     git clone https://github.com/Kirafls/HotelA.git 
 Despues van a entrar en la rama de componetentes, es la rama de trabajo
-    git cheakout componetentes
+    git checkout componetes
 Bajo esta rama es la que se va a trabajar, realizan los cambios que se requieran en el proyecto y se crea una nueva rama con su nombre
     git branch -b Su-nombre
 Despues en la consola debe aparecer la rama que crearon entre parentesis, ejemplo:(carlos); Añadir los cambios y documentos nuevos
