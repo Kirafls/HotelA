@@ -1,5 +1,5 @@
 Componentes a crear:
-    Menubar
+    Menubar //se tomara en cuenta usar el appcomponet.ts
     Inicio
     Acerca de
     Mostrar
