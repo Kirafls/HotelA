@@ -12,6 +12,7 @@ import { MostrarComponent } from './mostrar/mostrar.component';
 import { CapturarComponent } from './capturar/capturar.component';
 import { AcercaComponent } from './acerca/acerca.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { InicioComponent } from './inicio/inicio.component';
     MostrarComponent,
     CapturarComponent,
     AcercaComponent,
-    InicioComponent
+    InicioComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
