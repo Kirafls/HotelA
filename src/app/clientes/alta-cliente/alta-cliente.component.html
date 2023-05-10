@@ -1,0 +1,28 @@
+<h2>Ingresa tus datos para reservar</h2>
+<p>
+  <span>Nombre:</span>
+  <input type="text" [(ngModel)]="cliente.nombre">
+</p>
+<p>
+  <span>Apellido:</span>
+  <input type="text" [(ngModel)]="cliente.apellido">
+</p>
+<p>
+  <span>Habitacion:</span>
+  <input type="number" [(ngModel)]="cliente.habitacion">
+</p>
+<p>
+<p>
+  <span>Pago:</span>
+  <input type="number" [(ngModel)]="cliente.pago">
+</p>
+<p>
+  <span>Grupo:</span>
+  <select [(ngModel)]="cliente.grupo">
+    <option *ngFor="let grupo of grupos" value="{{grupo.id}}">{{grupo.nombre}}</option>
+  </select>
+</p>
+
+<p>
+  <button (click)="this.nuevoCliente()">Guardar</button>
+</p>

@@ -1,0 +1,12 @@
+<h2>
+  Listado de reservaciones
+</h2>
+<div *ngIf="! clientes.length">No hay reservaciones por el momento</div>
+<div>
+  <article *ngFor="let cliente of clientes">
+    <span>{{cliente.nombre}}</span>
+    <span>{{cliente.apellido}}</span>
+    <span>{{cliente.habitacion}}</span>
+    <span>{{cliente.grupo}}</span>
+  </article>
+</div>
