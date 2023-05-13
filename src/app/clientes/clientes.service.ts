@@ -31,6 +31,9 @@ export class ClientesService {
       id: this.clientes.length,
       nombre: '',
       apellido: '',
+      correo: '',
+      nPersona: 0,
+      nTel: 0,
       habitacion: 0,
       pago: 0,
       grupo: 0

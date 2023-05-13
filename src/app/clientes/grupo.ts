@@ -1,18 +1,18 @@
 export const GRUPOS = [
     {
-        id: 0,
+        idGrupo: 0,
         nombre: 'Amigos'
     },
     {
-        id: 1,
+        idGrupo: 1,
         nombre: 'Pareja'
     },
     {
-        id: 2,
+        idGrupo: 2,
         nombre: 'Familia'
     },
     {
-        id: 3,
+        idGrupo: 3,
         nombre: 'Solo/a'
     },
 ]
