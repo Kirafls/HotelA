@@ -18,7 +18,8 @@ export class AppComponent implements OnInit {
     this.alertifyconfim.confirm("Confirmar",this.confirmar);
   }
   confirmar(){
-    //this.alertifyservice.success("Hecho");
+    this.alertifyservice.success("Hecho");
+    alert("Hecho")
     console.log("Hecho");
   }
 
