@@ -7,8 +7,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2px;
-    width: 35%; 
-    height: 100%;
+    width: 40%; 
+    height: 900px;
     background: #e6e6e6;
     border-radius: 8px;
     box-shadow: 0 0 20px -10px #000;
@@ -76,7 +76,7 @@ button:hover {
     color: #fff
 }
 
-div {
+/*div {
     content: 'Hi';
     position: absolute;
     bottom: -1%;
@@ -88,7 +88,7 @@ div {
     border-radius: 6px;
     font-size: 13px;
     box-shadow: 10px 10px 40px -14px #000;
-}
+}*/
 
 span {
     margin: 0 5px 0 15px;

@@ -1,48 +1,57 @@
 <h2>Ingresa tus datos para reservar</h2>
 <h4>Es obligatorio llenar todos los espacios</h4>
-
 <form [formGroup]="formularioAlta" (ngSubmit)="nuevoCliente()" class="formularioCss">
-  <p>Nombre:
+  <p>Nombre:      
     <input type="text" formControlName="nombre" [(ngModel)]="cliente.nombre" required>
-    <span *ngIf="this.formularioAlta.get('nombre')?.errors?.['required']"></span>
-    <span *ngIf="this.formularioAlta.get('nombre')?.errors?.['minlength']"> <br>
-      (Debe tener como mínimo 3 caracteres)
+    <span *ngIf="this.formularioAlta.get('nombre')?.errors?.['required']"><br>
+      <div class="alert alert-danger">El campo es requerido</div>
+    </span>
+    <span *ngIf="this.formularioAlta.get('nombre')?.errors?.['minlength']"><br>
+      <div class="alert alert-danger">Por lo menos debe contener 3 caracteres</div>
     </span>
   </p>
   <p>Apellido:
     <input type="text" formControlName="apellido" [(ngModel)]="cliente.apellido" required>
-    <span *ngIf="this.formularioAlta.get('apellido')?.errors?.['required']"></span>
-    <span *ngIf="this.formularioAlta.get('apellido')?.errors?.['minlength']"> <br>
-      (Debe tener como mínimo 4 caracteres)
+    <span *ngIf="this.formularioAlta.get('apellido')?.errors?.['required']"><br><div class="alert alert-danger">El campo es requerido</div></span>
+    
+    <span *ngIf="this.formularioAlta.get('apellido')?.errors?.['minlength']"><br>
+    <div class="alert alert-danger">Por lo menos de contener 4 caracteres</div>
     </span>
-  </p>
   <p>No. Celular:
     <input type="tel" formControlName="telefono" [(ngModel)]="cliente.nTel" required>
-    <span *ngIf="this.formularioAlta.get('telefono')?.errors?.['required']"></span>
+    <span *ngIf="this.formularioAlta.get('telefono')?.errors?.['required']"><br><div class="alert alert-danger">El campo es requerido</div></span>
+    
     <span *ngIf="this.formularioAlta.get('telefono')?.errors?.['minlength']"> <br>
-      (Debe tener un mínimo de 10 digitos)
+      <div class="alert alert-danger">Por lo mneos debe de tener 10 numeros</div>
     </span>
-  </p>
   <p>Habitacion:
     <input type="number" formControlName="habitacion" [(ngModel)]="cliente.habitacion" required>
-    <span *ngIf="this.formularioAlta.get('habitacion')?.errors?.['required']"></span>
-    <span *ngIf="this.formularioAlta.get('habitacion')?.errors?.['max']"> <br>
-      (Como máximo hay 50 habitaciones)
+    <span *ngIf="this.formularioAlta.get('habitacion')?.errors?.['required']"><br>
+      <div class="alert alert-danger">El campo es requerido</div>
     </span>
+    <span *ngIf="this.formularioAlta.get('habitacion')?.errors?.['max']"> <br>
+      <div class="alert alert-danger">Solo hay 50 habitaciones</div>
+    </span>
+
   </p>
   <p>No. Personas:
     <input type="number" formControlName="personas" [(ngModel)]="cliente.nPersona" required>
-    <span *ngIf="this.formularioAlta.get('personas')?.errors?.['required']"></span>
+    <span *ngIf="this.formularioAlta.get('personas')?.errors?.['required']"><br>
+      <div class="alert alert-danger">El campo es requerido</div>
+    </span>
     <span *ngIf="this.formularioAlta.get('personas')?.errors?.['max']"> <br>
-      (Como máximo 4 personas en la habitación)
+      <div class="alert alert-danger">Solo 4 personas por habitacion</div>
     </span>
   </p>
   <p>Correo:
     <input type="text" formControlName="mail" [(ngModel)]="cliente.correo">
-    <span *ngIf="this.formularioAlta.get('mail')?.errors?.['required']"></span>
+    <span *ngIf="this.formularioAlta.get('mail')?.errors?.['required']"><br>
+      <div class="alert alert-danger">El campo es requerido</div>
+    </span>    
     <span *ngIf="this.formularioAlta.get('mail')?.errors?.['email']"> <br>
-      (El correo no es válido)
+      <div class="alert alert-danger">El correo no es valido</div>
     </span>
   </p>
   <button type="submit" (click)="this.nuevoCliente()">Confirmar</button>
+  
 </form>
