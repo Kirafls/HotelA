@@ -17,9 +17,10 @@ export class AltaClienteComponent implements OnInit {
     nombre: new FormControl('', [Validators.required, Validators.minLength(3)]),
     apellido: new FormControl('', [Validators.required, Validators.minLength(4)]),
     telefono: new FormControl('',[Validators.required, Validators.minLength(10)]),
-    habitacion: new FormControl('',[Validators.required, Validators.max(50)]),
+    habitacion: new FormControl('',[Validators.required, Validators.max(50), Validators.min(1)]),
     personas: new FormControl('',[Validators.required, Validators.max(4)]),
-    mail: new FormControl('', [Validators.required, Validators.email])
+    mail: new FormControl('', [Validators.required, Validators.email]),
+    fecha: new FormControl('',Validators.required)
   });
 
   constructor(private clientesService: ClientesService,public alertifyconfim:AlertifyService,public alertifyservice:AlertifyService) { 

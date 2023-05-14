@@ -36,7 +36,8 @@ export class ClientesService {
       nTel: 0,
       habitacion: 0,
       pago: 0,
-      grupo: 0
+      grupo: 0,
+      fecha: new Date()
     };
   }
 }

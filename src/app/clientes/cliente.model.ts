@@ -8,6 +8,7 @@ export interface Cliente {
     habitacion: number;
     pago: number;
     grupo: number;
+    fecha: Date;
 }
 
 export interface Grupo {
