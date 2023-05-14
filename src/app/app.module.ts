@@ -20,7 +20,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     AcercaComponent,
     InicioComponent,
-    NavbarComponent
+    NavbarComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -30,9 +31,12 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatButtonModule,
     MatCardModule,
     FormsModule,
-    ClientesModule
+    ClientesModule,
+   
   ],
-  providers: [AlertifyService],
+  providers: [
+    AlertifyService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

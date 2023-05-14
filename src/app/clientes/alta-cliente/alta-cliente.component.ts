@@ -50,4 +50,33 @@ export class AltaClienteComponent implements OnInit {
   alsuc(mesnaje:string){
     this.alertifyservice.success(mesnaje)
   }
+//CODIGO PARA MANEJAR LA FUNCIONABILIDAD DEL CALENDARIO MEN
+  selectedDate: Date = new Date();
+   dia:any;
+   mes:any;
+   anio:any;
+   fecha:any;
+   json:any;
+    
+  
+   
+  onDateSelected(event: any) {
+    const inputValue = event.target.value;
+    this.selectedDate = new Date(inputValue);
+    this.dia = this.selectedDate.getDate();
+    this.mes = this.selectedDate.getMonth() + 1; // Los meses en JavaScript comienzan desde 0
+    this.anio = this.selectedDate.getFullYear();
+    //AQUI SE GUARDA LA FEHCA EN UN json
+    this.json=JSON.stringify({
+      dia: this.dia,
+      mes: this.mes,
+      anio: this.anio
+    });
+
+   
+    console.log(this.json);//VERIFICA CONSOLA EN CASO DE QUE TENGAS ERRORES
+  }
+ 
+
+   
 }

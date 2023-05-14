@@ -24,6 +24,7 @@
     <span *ngIf="this.formularioAlta.get('telefono')?.errors?.['minlength']"> <br>
       <div class="alert alert-danger">Por lo mneos debe de tener 10 numeros</div>
     </span>
+    
   <p>Habitacion:
     <input type="number" formControlName="habitacion" [(ngModel)]="cliente.habitacion" required>
     <span *ngIf="this.formularioAlta.get('habitacion')?.errors?.['required']"><br>
@@ -55,3 +56,15 @@
   <button type="submit" (click)="this.nuevoCliente()">Confirmar</button>
   
 </form>
+
+<mat-form-field appearance="fill">
+  <mat-label>Choose a date</mat-label>
+  <input matInput [matDatepicker]="picker" (dateInput)="onDateSelected($event)">
+  <mat-hint>DD/MM/YYYY</mat-hint>
+  <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+<h4>LA FECHA SELECCIONADA ES</h4>
+<p>Dia:{{dia}}</p>
+<p>Mes:{{mes}}</p>
+<p>Año:{{anio}}</p>
