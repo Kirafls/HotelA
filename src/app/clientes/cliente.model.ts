@@ -9,6 +9,7 @@ export interface Cliente {
     pago: number;
     grupo: number;
     fecha: Date;
+    hora:''
 }
 
 export interface Grupo {

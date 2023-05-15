@@ -38,7 +38,12 @@
     <span *ngIf="this.formularioAlta.get('habitacion')?.errors?.['max']">
       <div class="alert alert-danger">Solo hay 50 habitaciones</div>
     </span>
-
+    <span *ngIf="comprobar(cliente.habitacion); else error">
+      <h5>Habitacion ocupada</h5>
+    </span>
+    <ng-template #error>
+      <h5>Habitacion libre</h5>
+    </ng-template>
   </p>
   <p>No. Personas:
     <input type="number" formControlName="personas" [(ngModel)]="cliente.nPersona" required>
@@ -61,19 +66,29 @@
   <p>
     <mat-form-field appearance="fill">
       <mat-label>Elige una fecha</mat-label>
-      <input formControlName="fecha" matInput [matDatepicker]="picker" (dateInput)="onDateSelected($event)"
-        [(ngModel)]="cliente.fecha" required>
+      <input formControlName="fecha" matInput [matDatepicker]="picker" [(ngModel)]="cliente.fecha" (dateChange)="onDateChange($event)" required>
         <span *ngIf="this.formularioAlta.get('fecha')?.errors?.['required']"></span>
       <mat-hint>DD/MM/YYYY</mat-hint>
       <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
+      
+      
     </mat-form-field>
+   
+    
+    <br>
+    Elija una hora:
+    <input class="form-control" type="time" [(ngModel)]="cliente.hora" (input)="onTimeInput($event)" value="15:00" required>
+
+    <span *ngIf="combrobarfechas(); else otro">
+      <h5>La fecha o la hora seleccionada no es valida ya sea por que no existe o ya este uan reservacion en ella</h5>
+    </span>
+    <ng-template #otro>
+      <h5>Buena seleccion</h5>
+    </ng-template>
   </p>
+
   <button type="submit" (click)="this.nuevoCliente()">Confirmar</button>
 
 </form>
 
-<h4>LA FECHA SELECCIONADA ES</h4>
-<p>Dia:{{dia}}</p>
-<p>Mes:{{mes}}</p>
-<p>Año:{{anio}}</p>

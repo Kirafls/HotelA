@@ -20,7 +20,8 @@ export class AltaClienteComponent implements OnInit {
     habitacion: new FormControl('',[Validators.required, Validators.max(50), Validators.min(1)]),
     personas: new FormControl('',[Validators.required, Validators.max(4)]),
     mail: new FormControl('', [Validators.required, Validators.email]),
-    fecha: new FormControl('',Validators.required)
+    fecha: new FormControl('',Validators.required),
+    hora: new FormControl('',Validators.required)
   });
 
   constructor(private clientesService: ClientesService,public alertifyconfim:AlertifyService,public alertifyservice:AlertifyService) { 
@@ -29,6 +30,7 @@ export class AltaClienteComponent implements OnInit {
   ngOnInit() {
     this.cliente = this.clientesService.nuevoCliente();
     this.grupos = this.clientesService.getGrupos();
+    
   }
   nuevoCliente(): void {
     if (this.formularioAlta.valid) {
@@ -51,33 +53,31 @@ export class AltaClienteComponent implements OnInit {
   alsuc(mesnaje:string){
     this.alertifyservice.success(mesnaje)
   }
-//CODIGO PARA MANEJAR LA FUNCIONABILIDAD DEL CALENDARIO MEN
-  selectedDate: Date = new Date();
-   dia:any;
-   mes:any;
-   anio:any;
-   fecha:any;
-   json:any;
-    
+
+  selectedTime: string='';
+  selectedDate: Date=new Date();
   
-   
-  onDateSelected(event: any) {
-    const inputValue = event.target.value;
-    this.selectedDate = new Date(inputValue);
-    this.dia = this.selectedDate.getDate();
-    this.mes = this.selectedDate.getMonth() + 1; // Los meses en JavaScript comienzan desde 0
-    this.anio = this.selectedDate.getFullYear();
-    //AQUI SE GUARDA LA FEHCA EN UN json
-    this.json=JSON.stringify({
-      dia: this.dia,
-      mes: this.mes,
-      anio: this.anio
-    });
 
-   
-    console.log(this.json);//VERIFICA CONSOLA EN CASO DE QUE TENGAS ERRORES
+  onTimeInput(event: any): void {
+    const selectedTime = event.target.value;
+    this.selectedTime = selectedTime;
   }
- 
+  
+  onDateChange(event: any) {
+    const selectedDate = event.value;
+    console.log(selectedDate);
+    this.selectedDate = selectedDate;
+    
+  }
 
-   
+  combrobarfechas():boolean{
+   return  this.clientesService.comprobar(this.selectedDate,this.selectedTime);
+    
+  }
+  
+  comprobar(numero:any):boolean{
+    
+    return this.clientesService.habitaciones(numero);
+  }
+
 }
