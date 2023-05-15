@@ -10,7 +10,7 @@ export class ClientesService {
   private grupos: Grupo[] = GRUPOS;
 
   constructor() {
-    this.clientes=JSON.parse( localStorage.getItem("data") || '[]' );
+    this.clientes = JSON.parse(localStorage.getItem("data") || '[]');
   }
 
   getGrupos() {
@@ -23,7 +23,7 @@ export class ClientesService {
 
   agregarCliente(cliente: Cliente) {
     this.clientes.push(cliente);
-    localStorage.setItem('data',JSON.stringify(this.clientes));
+    localStorage.setItem('data', JSON.stringify(this.clientes));
   }
 
   nuevoCliente(): Cliente {
@@ -38,40 +38,41 @@ export class ClientesService {
       pago: 0,
       grupo: 0,
       fecha: new Date(),
-      hora:'',
+      hora: '',
     };
   }
-  comprobar(fecha:Date,hora:string):boolean{
-    let bandera:boolean=false;
-   
-    if(this.clientes!=null){
 
-      const fecha_actual= new Date( );
-      if(fecha.getTime()<=fecha_actual.getTime()){
-       bandera=true;
+  comprobar(fecha: Date, hora: string): boolean {
+    let bandera: boolean = false;
+
+    if (this.clientes != null) {
+
+      const fecha_actual = new Date();
+      if (fecha.getTime() <= fecha_actual.getTime()) {
+        bandera = true;
       }
-      else{
-        for(const elemento of this.clientes){
-          if(elemento.hora===hora){
-            bandera=true;
+      else {
+        for (const elemento of this.clientes) {
+          if (elemento.hora === hora) {
+            bandera = true;
             break;
           }
-          
-      }
+
+        }
 
       }
     }
     return bandera;
   }
-  habitaciones(numero:any):boolean{
-    let bandera:boolean=false;
-        for(const elemento of this.clientes){
-          if(elemento.habitacion==numero){
-            bandera=true;
-            break;
-          }
-          
+  habitaciones(numero: any): boolean {
+    let bandera: boolean = false;
+    for (const elemento of this.clientes) {
+      if (elemento.habitacion == numero) {
+        bandera = true;
+        break;
       }
+
+    }
     return bandera;
   }
 
