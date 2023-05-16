@@ -19,8 +19,7 @@ export class AppComponent implements OnInit {
   }
   confirmar(){
     this.alertifyservice.success("Hecho");
-    alert("Hecho")
-    console.log("Hecho");
+    
   }
 
   

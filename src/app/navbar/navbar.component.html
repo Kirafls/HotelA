@@ -24,11 +24,53 @@
            </ul>            
         </nav>
         <div class="buscar">
-            <input type="text" placeholder="Buscar reservacion" required />
+            <input type="text" placeholder="Buscar reservacion" [(ngModel)]="texto" requered/>
       
-            <div class="btn">
+            <button class="btn" (click)="buscar()">
               <i class="fas fa-search icon"></i>
-            </div>
+            </button>
           </div>
     </header>
+  
+    <div *ngIf="bandera; else error" class="container position-relative">
+      
+      <div class="d-flex justify-content-center">
+        
+        <div class="card" style="width: 25rem; margin:10px;">
+          <button class="btn-close position-absolute top-0 end-0" (click)="cerrar()"></button>
+          <div class="card-header">
+            
+            <h2 class="card-title text-center font-weight-bold" style="font-family: 'Arial', sans-serif;">Información de la reservación</h2>
+          </div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <span class="font-weight-bold">Nombre:</span> {{clientes[posicion].nombre}}
+              </li>
+              <li class="list-group-item">
+                <span class="font-weight-bold">Apellidos:</span> {{clientes[posicion].apellido}}
+              </li>
+              <li class="list-group-item">
+                <span class="font-weight-bold">No. Habitación:</span> {{clientes[posicion].habitacion}}
+              </li>
+              <li class="list-group-item">
+                <span class="font-weight-bold">Correo:</span> {{clientes[posicion].correo}}
+              </li>
+              <li class="list-group-item">
+                <span class="font-weight-bold">No. Personas:</span> {{clientes[posicion].nPersona}}
+              </li>
+              <li class="list-group-item">
+                <span class="font-weight-bold">Fecha de reservación:</span> {{clientes[posicion].fecha}}
+              </li>
+              <li class="list-group-item">
+                <span class="font-weight-bold">Hora de reservación:</span> {{clientes[posicion].hora}}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  <ng-template #error>
 
+  </ng-template>
