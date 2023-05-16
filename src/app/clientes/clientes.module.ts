@@ -10,6 +10,9 @@ import {MatInputModule} from '@angular/material/input';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatFormFieldModule} from '@angular/material/form-field';
+import { FullCalendarModule } from '@fullcalendar/angular';
+import { CalendarOptions } from 'fullcalendar';
+import dayGridPlugin from '@fullcalendar/daygrid';
 
 @NgModule({
   declarations: [
@@ -30,10 +33,11 @@ import { MatFormFieldModule} from '@angular/material/form-field';
     MatFormFieldModule,
     MatNativeDateModule,
     MatInputModule,
+    FullCalendarModule
   ],
   exports: [
     AltaClienteComponent,
     ListadoClientesComponent
   ]
 })
-export class ClientesModule { }
+export class ClientesModule {}
