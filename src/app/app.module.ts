@@ -14,6 +14,7 @@ import { AcercaComponent } from './acerca/acerca.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DomseguroPipe } from './inicio/domseguro.pipe';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
     AcercaComponent,
     InicioComponent,
     NavbarComponent,
+    DomseguroPipe,
    
   ],
   imports: [

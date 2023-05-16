@@ -124,27 +124,30 @@
   <hr>
 
 
-<div class="container py-4">
-  <div class="row justify-content-center">
-    <div class="col-12 col-md-10">
-      <h3 class="text-center mb-4">¡Contamos con hoteles en otros paises!</h3>
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col"> Pais </th>
-            <th scope="col"> Ciudad </th>
-            <th scope="col" style="text-align: center;"> Bandera </th>
-          </tr>
-        </thead>
-      
-        <tbody *ngFor="let hotel of data">
-          <tr class="table-light">
-            <td> {{hotel.name}} </td>
-            <td> {{hotel.capital}} </td>
-            <td><img src="{{hotel.flag}}" alt="" width="50" height="50"></td>
-          </tr>
-        </tbody>
-      </table>
+  <div class="container py-4">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10">
+        <h3 class="text-center mb-4">¡Contamos con hoteles en otros paises!</h3>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col"> Pais </th>
+              <th scope="col"> Ciudad </th>
+              <th scope="col" style="text-align: center;"> Bandera </th>
+            </tr>
+          </thead>
+
+          <tbody *ngFor="let hotel of data">
+            <tr class="table-light">
+              <td> {{hotel.name}} </td>
+              <td> {{hotel.capital}} </td>
+              <td><img src="{{hotel.flag}}" alt="" width="50" height="50"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
-</div>
+
+  <iframe width="560" height="315" [src]="video | domseguro:'https://www.youtube.com/embed/' " frame border="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-inpicture" allowfullscreen></iframe>

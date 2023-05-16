@@ -8,6 +8,8 @@ import { HttpErrorResponse } from '@angular/common/http';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent {
+  video='wl8Z11gOi4Q';
+
   data:any;
 
   constructor(private apiHotelService: ApiHotelService) { }
