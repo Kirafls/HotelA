@@ -39,10 +39,10 @@
       <div class="alert alert-danger">Solo hay 50 habitaciones</div>
     </span>
     <span *ngIf="comprobar(cliente.habitacion); else error">
-      <h5>Habitacion ocupada</h5>
+      <div class="alert alert-danger">Habitacion ocupada</div>
     </span>
     <ng-template #error>
-      <h5>Habitacion libre</h5>
+      <div class="alert alert-success">Habitacion libre</div>
     </ng-template>
   </p>
   <p>No. Personas:
@@ -66,29 +66,27 @@
   <p>
     <mat-form-field appearance="fill">
       <mat-label>Elige una fecha</mat-label>
-      <input formControlName="fecha" matInput [matDatepicker]="picker" [(ngModel)]="cliente.fecha" (dateChange)="onDateChange($event)" required>
-        <span *ngIf="this.formularioAlta.get('fecha')?.errors?.['required']"></span>
-      <mat-hint>DD/MM/YYYY</mat-hint>
+      <input formControlName="fecha" matInput [matDatepicker]="picker" [(ngModel)]="cliente.fecha"
+        (dateChange)="onDateChange($event)" required>
+      <span *ngIf="this.formularioAlta.get('fecha')?.errors?.['required']"></span>
+
       <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
-      
-      
     </mat-form-field>
-   
-    
     <br>
     Elija una hora:
-    <input class="form-control" type="time" [(ngModel)]="cliente.hora" (input)="onTimeInput($event)" value="15:00" required>
+    <input class="form-control" formControlName="hora" type="time" [(ngModel)]="cliente.hora"
+      (input)="onTimeInput($event)" value="15:00" required>
 
     <span *ngIf="combrobarfechas(); else otro">
-      <h5>La fecha o la hora seleccionada no es valida ya sea por que no existe o ya este uan reservacion en ella</h5>
+      <div class="alert alert-danger">La fecha o la hora seleccionada no valida, ya sea por que no existe o ya este
+        reservada</div>
     </span>
     <ng-template #otro>
-      <h5>Buena seleccion</h5>
+      <div class="alert alert-success">Buena selección</div>
     </ng-template>
   </p>
 
   <button type="submit" (click)="this.nuevoCliente()">Confirmar</button>
 
 </form>
-
