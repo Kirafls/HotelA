@@ -13,6 +13,7 @@ import { ClientesModule } from './clientes/clientes.module';
 import { AcercaComponent } from './acerca/acerca.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import {MatTabsModule} from '@angular/material/tabs'; 
 import { HttpClientModule } from '@angular/common/http';
 import { DomseguroPipe } from './inicio/domseguro.pipe';
 
@@ -35,7 +36,9 @@ import { DomseguroPipe } from './inicio/domseguro.pipe';
     MatCardModule,
     FormsModule,
     ClientesModule,
+    MatTabsModule,
     HttpClientModule
+   
   ],
   providers: [
     AlertifyService

@@ -5,3 +5,7 @@ h1{
     color: #252536;
     border-bottom: 3px solid #78788c
 }
+full-calendar{
+    margin: 5rem;
+    padding: 3rem;
+}
