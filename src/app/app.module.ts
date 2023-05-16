@@ -13,6 +13,7 @@ import { ClientesModule } from './clientes/clientes.module';
 import { AcercaComponent } from './acerca/acerca.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -32,7 +33,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatCardModule,
     FormsModule,
     ClientesModule,
-   
+    HttpClientModule
   ],
   providers: [
     AlertifyService
