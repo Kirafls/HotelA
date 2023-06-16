@@ -1,0 +1,19 @@
+.fondo{
+    background-color: white;
+    
+}
+h1{
+    color: black;
+    text-align: center;
+    font-size: 60px;
+}
+.tex{
+    padding: 20px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+}
+.tita{
+    padding: 15px;
+    border: solid 4px black;
+}

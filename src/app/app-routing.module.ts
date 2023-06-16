@@ -4,12 +4,14 @@ import { ListadoClientesComponent } from './clientes/listado-clientes/listado-cl
 import { AltaClienteComponent } from './clientes/alta-cliente/alta-cliente.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { AcercaComponent } from './acerca/acerca.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 const routes: Routes = [
 {path:"inicio",component:InicioComponent},  
 {path:"lista",component:ListadoClientesComponent},
 {path:"alta",component:AltaClienteComponent},
 {path:"acerca",component:AcercaComponent},
+{path:"contacto",component:ContactoComponent},
 {path:"**",component:InicioComponent}
 ];
 @NgModule({

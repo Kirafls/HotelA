@@ -1,0 +1,47 @@
+<div class="fondo">
+    <br>
+  <h1>Contactanos!!</h1>  
+  <mat-divider></mat-divider>
+<form [formGroup]="datos">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 ">
+        
+        <input type="email" [hidden]="ocultarInput" placeholder="Correo" class="form-control" formControlName="correo" [value]="correoFijo"><br>
+        <input type="text" placeholder="Asunto" class="form-control" formControlName="asunto"><br>
+        <textarea placeholder="Mensaje" cols="40" rows="4" class="form-control" formControlName="mensaje"></textarea><br>
+        <div class="text-center p-2">
+          <button class="btn btn-dark" (click)="enviocorreo()" [disabled]="cumpleFiltro()">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<mat-divider></mat-divider>
+<div class="tex">
+    <h1 class="tita">Acerca Del Formulario</h1>
+    
+    <p>¡Contáctanos! Nos encantaría escuchar de ti. Utiliza nuestro formulario de contacto para enviarnos cualquier pregunta,
+        consulta o comentario que puedas tener. Nuestro formulario de contacto está diseñado para que sea fácil de usar y nos 
+        proporciona la información necesaria para responder de manera efectiva.Nuestro formulario de contacto consta de algunos 
+        campos importantes.</p>
+      <br>
+      <p>
+        En primer lugar, tenemos un campo de asunto donde puedes indicar el tema principal de tu 
+        mensaje. Ya sea que necesites ayuda , tengas una pregunta específica o desees realizar una consulta general
+        , este campo es el lugar perfecto para proporcionar esos detalles.
+      </p>  <br>
+       <p>
+        Luego, tenemos un área de texto donde puedes escribir tu mensaje en detalle. 
+        Siéntete libre de compartir cualquier información adicional o preguntas específicas que puedas tener. 
+        Estamos aquí para brindarte la ayuda que necesitas, así que no dudes en ser claro y detallado en tu mensaje.
+       </p> <br>
+    <p>
+        Una vez que hayas completado el formulario, simplemente haz clic en el botón 'Enviar' y nos llegará tu mensaje de inmediato. 
+        Nos esforzamos por responder a todas las consultas lo más rápido posible, por lo que recibirás una respuesta de nuestro equipo 
+        en un plazo razonable.
+
+    </p><br>
+    <mat-divider></mat-divider>
+
+</div>
+  

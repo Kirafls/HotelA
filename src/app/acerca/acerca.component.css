@@ -6,3 +6,7 @@ img{
     height: 100px;
     width: 100px;
 }
+mat-card-content{
+    font-size: 18px;
+    text-align: center;
+}

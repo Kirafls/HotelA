@@ -32,3 +32,11 @@
     margin-bottom: 0px;
     width: 100%;
    }
+
+   .yt{
+      text-align: center;
+      
+   }
+   mat-tab-group{
+      font-size: 18px;
+   }

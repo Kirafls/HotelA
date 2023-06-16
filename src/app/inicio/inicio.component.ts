@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ApiHotelService } from './api-hotel.service';
 import { HttpErrorResponse } from '@angular/common/http';
 
+
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
