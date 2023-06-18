@@ -1,0 +1,281 @@
+[debug] [2023-06-18T06:08:11.022Z] ----------------------------------------------------------------------
+[debug] [2023-06-18T06:08:11.028Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-06-18T06:08:11.030Z] CLI Version:   12.4.0
+[debug] [2023-06-18T06:08:11.031Z] Platform:      win32
+[debug] [2023-06-18T06:08:11.031Z] Node Version:  v18.14.2
+[debug] [2023-06-18T06:08:11.033Z] Time:          Sun Jun 18 2023 00:08:11 GMT-0600 (hora estándar central)
+[debug] [2023-06-18T06:08:11.033Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-18T06:08:11.053Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-18T06:08:11.054Z] > authorizing via signed-in user (casromjuanm@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Juani\OneDrive\Documentos\Semestre 6\Tecnologias Web\ProyectoFinal\HotelA
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-06-18T06:08:42.381Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-06-18T06:08:42.381Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"pwa-dominio","name":"pwa-dom"}
+[debug] [2023-06-18T06:08:47.011Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-06-18T06:08:47.011Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.6131418280717146309"}
+[debug] [2023-06-18T06:08:47.013Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6131418280717146309 [none]
+[debug] [2023-06-18T06:08:50.000Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6131418280717146309 200
+[debug] [2023-06-18T06:08:50.000Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6131418280717146309 {"name":"operations/cp.6131418280717146309","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2023-06-18T06:08:53.012Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:186:29)
+    at async createFirebaseProjectAndLog (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:45:9)
+    at async promptAndCreateNewProject (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:32:12)
+    at async doSetup (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:88:27)
+    at async init (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:37:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-06-18T06:11:52.712Z] ----------------------------------------------------------------------
+[debug] [2023-06-18T06:11:52.714Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-06-18T06:11:52.715Z] CLI Version:   12.4.0
+[debug] [2023-06-18T06:11:52.716Z] Platform:      win32
+[debug] [2023-06-18T06:11:52.716Z] Node Version:  v18.14.2
+[debug] [2023-06-18T06:11:52.720Z] Time:          Sun Jun 18 2023 00:11:52 GMT-0600 (hora estándar central)
+[debug] [2023-06-18T06:11:52.721Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-18T06:11:52.733Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-18T06:11:52.734Z] > authorizing via signed-in user (casromjuanm@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Juani\OneDrive\Documentos\Semestre 6\Tecnologias Web\ProyectoFinal\HotelA
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-06-18T06:12:13.083Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-06-18T06:12:13.083Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"pwa-domini","name":"pwa-domini"}
+[debug] [2023-06-18T06:12:13.852Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2023-06-18T06:12:13.852Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2023-06-18T06:12:14.226Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID pwa-domini. Please try again with a unique project ID.
+[debug] [2023-06-18T06:13:22.841Z] ----------------------------------------------------------------------
+[debug] [2023-06-18T06:13:22.847Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-06-18T06:13:22.849Z] CLI Version:   12.4.0
+[debug] [2023-06-18T06:13:22.850Z] Platform:      win32
+[debug] [2023-06-18T06:13:22.850Z] Node Version:  v18.14.2
+[debug] [2023-06-18T06:13:22.860Z] Time:          Sun Jun 18 2023 00:13:22 GMT-0600 (hora estándar central)
+[debug] [2023-06-18T06:13:22.861Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-18T06:13:22.883Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-18T06:13:22.885Z] > authorizing via signed-in user (casromjuanm@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Juani\OneDrive\Documentos\Semestre 6\Tecnologias Web\ProyectoFinal\HotelA
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-06-18T06:13:39.830Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-06-18T06:13:39.830Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"pwa-dominio","name":"pwa-dominio"}
+[debug] [2023-06-18T06:13:41.121Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-06-18T06:13:41.121Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.7055971979120276371"}
+[debug] [2023-06-18T06:13:41.124Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7055971979120276371 [none]
+[debug] [2023-06-18T06:13:42.108Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7055971979120276371 200
+[debug] [2023-06-18T06:13:42.108Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7055971979120276371 {"name":"operations/cp.7055971979120276371","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2023-06-18T06:13:42.723Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:186:29)
+    at async createFirebaseProjectAndLog (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:45:9)
+    at async promptAndCreateNewProject (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:32:12)
+    at async doSetup (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:88:27)
+    at async init (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:37:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-06-18T06:14:02.668Z] ----------------------------------------------------------------------
+[debug] [2023-06-18T06:14:02.671Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-06-18T06:14:02.672Z] CLI Version:   12.4.0
+[debug] [2023-06-18T06:14:02.673Z] Platform:      win32
+[debug] [2023-06-18T06:14:02.673Z] Node Version:  v18.14.2
+[debug] [2023-06-18T06:14:02.674Z] Time:          Sun Jun 18 2023 00:14:02 GMT-0600 (hora estándar central)
+[debug] [2023-06-18T06:14:02.674Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-18T06:14:02.684Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-18T06:14:02.685Z] > authorizing via signed-in user (casromjuanm@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Juani\OneDrive\Documentos\Semestre 6\Tecnologias Web\ProyectoFinal\HotelA
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-06-18T06:14:21.921Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-06-18T06:14:21.921Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"pwa-dominio","name":"pwa-dominio"}
+[debug] [2023-06-18T06:14:26.207Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-06-18T06:14:26.207Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.8108534485516218690"}
+[debug] [2023-06-18T06:14:26.208Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8108534485516218690 [none]
+[debug] [2023-06-18T06:14:27.975Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8108534485516218690 200
+[debug] [2023-06-18T06:14:27.975Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8108534485516218690 {"name":"operations/cp.8108534485516218690","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2023-06-18T06:14:28.499Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:186:29)
+    at async createFirebaseProjectAndLog (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:45:9)
+    at async promptAndCreateNewProject (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:32:12)
+    at async doSetup (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:88:27)
+    at async init (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:37:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-06-18T06:22:19.121Z] ----------------------------------------------------------------------
+[debug] [2023-06-18T06:22:19.125Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-06-18T06:22:19.126Z] CLI Version:   12.4.0
+[debug] [2023-06-18T06:22:19.126Z] Platform:      win32
+[debug] [2023-06-18T06:22:19.127Z] Node Version:  v18.14.2
+[debug] [2023-06-18T06:22:19.129Z] Time:          Sun Jun 18 2023 00:22:19 GMT-0600 (hora estándar central)
+[debug] [2023-06-18T06:22:19.130Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-18T06:22:19.147Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-18T06:22:19.148Z] > authorizing via signed-in user (casromjuanm@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Juani\OneDrive\Documentos\Semestre 6\Tecnologias Web\ProyectoFinal\HotelA
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-06-18T06:23:05.342Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-06-18T06:23:05.343Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"pwa-dominio","name":"pwa-dominio"}
+[debug] [2023-06-18T06:23:06.809Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-06-18T06:23:06.809Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.8856995155878627847"}
+[debug] [2023-06-18T06:23:06.811Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8856995155878627847 [none]
+[debug] [2023-06-18T06:23:07.862Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8856995155878627847 200
+[debug] [2023-06-18T06:23:07.862Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8856995155878627847 {"name":"operations/cp.8856995155878627847","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2023-06-18T06:23:08.371Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:186:29)
+    at async createFirebaseProjectAndLog (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:45:9)
+    at async promptAndCreateNewProject (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:32:12)
+    at async doSetup (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:88:27)
+    at async init (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:37:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-06-18T06:32:31.149Z] ----------------------------------------------------------------------
+[debug] [2023-06-18T06:32:31.152Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-06-18T06:32:31.153Z] CLI Version:   12.4.0
+[debug] [2023-06-18T06:32:31.154Z] Platform:      win32
+[debug] [2023-06-18T06:32:31.154Z] Node Version:  v18.14.2
+[debug] [2023-06-18T06:32:31.164Z] Time:          Sun Jun 18 2023 00:32:31 GMT-0600 (hora estándar central)
+[debug] [2023-06-18T06:32:31.164Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-18T06:32:31.177Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-18T06:32:31.179Z] > authorizing via signed-in user (casromjuanm@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Juani\OneDrive\Documentos\Semestre 6\Tecnologias Web\ProyectoFinal\HotelA
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-06-18T06:33:02.971Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-06-18T06:33:02.972Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"pwa-dominio","name":"pwa-dominio"}
+[debug] [2023-06-18T06:33:03.745Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-06-18T06:33:03.745Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.5443140812712735912"}
+[debug] [2023-06-18T06:33:03.747Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5443140812712735912 [none]
+[debug] [2023-06-18T06:33:04.459Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5443140812712735912 200
+[debug] [2023-06-18T06:33:04.459Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5443140812712735912 {"name":"operations/cp.5443140812712735912"}
+[debug] [2023-06-18T06:33:04.974Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-06-18T06:33:04.974Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5443140812712735912 [none]
+[debug] [2023-06-18T06:33:05.639Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5443140812712735912 200
+[debug] [2023-06-18T06:33:05.640Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5443140812712735912 {"name":"operations/cp.5443140812712735912"}
+[debug] [2023-06-18T06:33:06.641Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-06-18T06:33:06.642Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5443140812712735912 [none]
+[debug] [2023-06-18T06:33:07.325Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5443140812712735912 200
+[debug] [2023-06-18T06:33:07.325Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5443140812712735912 {"name":"operations/cp.5443140812712735912","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2023-06-18T06:33:09.339Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-06-18T06:33:09.340Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5443140812712735912 [none]
+[debug] [2023-06-18T06:33:10.085Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5443140812712735912 200
+[debug] [2023-06-18T06:33:10.085Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5443140812712735912 {"name":"operations/cp.5443140812712735912","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"158192798907","projectId":"pwa-dominio","lifecycleState":"ACTIVE","name":"pwa-dominio","createTime":"2023-06-18T06:33:06.146Z"}}
+[debug] [2023-06-18T06:33:10.087Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/pwa-dominio:addFirebase [none]
+[debug] [2023-06-18T06:33:11.148Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/pwa-dominio:addFirebase 403
+[debug] [2023-06-18T06:33:11.148Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/pwa-dominio:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-06-18T06:33:11.149Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-06-18T06:33:11.390Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Juani\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
