@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1687071950012,
+  "timestamp": 1687213271026,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.aaebd64d653f2c46.js",
+        "/main.6bffb70c5d4b5ed1.js",
         "/manifest.webmanifest",
         "/polyfills.fdaef94228ef8b7c.js",
         "/runtime.b409c5b2dcb57096.js",
@@ -83,8 +83,8 @@
     "/assets/img/hotel8.jpg": "88b6b722d9e72fe9aa97d3e5828704d3bd023fde",
     "/assets/img/hotel9.jpg": "58163b391b7a3a9f58e9594f1fbed7b9c421150a",
     "/favicon.ico": "808c92019d50792a63a34be0567edbe93d66e359",
-    "/index.html": "ae3eaed741b58156c07ec9b04dfba59e316d7711",
-    "/main.aaebd64d653f2c46.js": "9c7c74087065c21f815a480b006edf36e1ccae11",
+    "/index.html": "9e15028fefad6831dc22d6c53203974e545d48c6",
+    "/main.6bffb70c5d4b5ed1.js": "b921513aaeba416c92b13810a164581fbf2aa7c2",
     "/manifest.webmanifest": "00fc7b9e5d6e5207756462eb5805e6a2c167fded",
     "/polyfills.fdaef94228ef8b7c.js": "11f03e81299084346477b1032f1798d3af593a3d",
     "/runtime.b409c5b2dcb57096.js": "9c922992c0918e2b11192fa60445f8b889052986",
