@@ -13,18 +13,19 @@
             <th scope="col"> # Personas </th>
             <th scope="col"> Fecha de Reservacion </th>
             <th scope="col"> Hora de Reservacion </th>
+            <th scope="col">Cancelación</th>
           </tr>
         </thead>
-      
         <tbody *ngFor="let cliente of clientes">
           <tr class="table-light">
-            <td> {{cliente.nombre}} </td> 
-            <td> {{cliente.apellido}} </td>
-            <td> {{cliente.habitacion}} </td>
-            <td> {{cliente.correo}} </td>
-            <td> {{cliente.nPersona}} </td>
-            <td> {{cliente.fecha}} </td>
-            <td> {{cliente.hora}} </td>
+            <td> {{cliente.description.nombre}} </td> 
+            <td> {{cliente.description.apellido}} </td>
+            <td> {{cliente.description.habitacion}} </td>
+            <td> {{cliente.description.correo}} </td>
+            <td> {{cliente.description.nPersona}} </td>
+            <td> {{getFormattedDate(cliente.description.fecha)}} </td>
+            <td> {{cliente.description.hora}} </td>
+            <td><button (click)="idCliente(cliente.id)">Borrar reservación</button>  </td>
           </tr>
         </tbody>
       </table>

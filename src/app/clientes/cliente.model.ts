@@ -6,13 +6,13 @@ export interface Cliente {
     nPersona: number;
     nTel: number;
     habitacion: number;
-    pago: number;
-    grupo: number;
+   // pago: number;
+    //grupo: number;
     fecha: Date;
     hora:''
 }
 
-export interface Grupo {
+/*export interface Grupo {
     idGrupo: number;
     nombre: string;
-}
+}*/

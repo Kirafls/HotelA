@@ -1,4 +1,4 @@
-export const GRUPOS = [
+/*export const GRUPOS = [
     {
         idGrupo: 0,
         nombre: 'Amigos'
@@ -15,4 +15,4 @@ export const GRUPOS = [
         idGrupo: 3,
         nombre: 'Solo/a'
     },
-]
+]*/

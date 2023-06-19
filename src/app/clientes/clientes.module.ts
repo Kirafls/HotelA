@@ -13,6 +13,7 @@ import { MatFormFieldModule} from '@angular/material/form-field';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { CalendarOptions } from 'fullcalendar';
 import dayGridPlugin from '@fullcalendar/daygrid';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
     ListadoClientesComponent
   ],
   providers: [
+    DatePipe,
     ClientesService,
     {provide:LOCALE_ID,useValue:'es'}
   ],
