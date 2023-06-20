@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1687219998956,
+  "timestamp": 1687230191527,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.dd2b0cd3a5a6b446.js",
+        "/main.0bdc0e7d48b4cd4c.js",
         "/manifest.webmanifest",
         "/polyfills.fdaef94228ef8b7c.js",
         "/runtime.b409c5b2dcb57096.js",
-        "/scripts.f7ce4e1245ec861a.js",
+        "/scripts.fe5c14a7abce036c.js",
         "/styles.4c3ebb08803e3976.css"
       ],
       "patterns": []
@@ -83,12 +83,12 @@
     "/assets/img/hotel8.jpg": "88b6b722d9e72fe9aa97d3e5828704d3bd023fde",
     "/assets/img/hotel9.jpg": "58163b391b7a3a9f58e9594f1fbed7b9c421150a",
     "/favicon.ico": "808c92019d50792a63a34be0567edbe93d66e359",
-    "/index.html": "8be178f6ee22265295becef18722ba2ee188cd2a",
-    "/main.dd2b0cd3a5a6b446.js": "f07bf7da7f0828734344b7b6157fb4d4a7c074e9",
+    "/index.html": "3c5867bf21464d13a46330f735eb937dd5c6f27d",
+    "/main.0bdc0e7d48b4cd4c.js": "f83c799079380c129028ffc33555c90fc4721cea",
     "/manifest.webmanifest": "00fc7b9e5d6e5207756462eb5805e6a2c167fded",
     "/polyfills.fdaef94228ef8b7c.js": "11f03e81299084346477b1032f1798d3af593a3d",
     "/runtime.b409c5b2dcb57096.js": "9c922992c0918e2b11192fa60445f8b889052986",
-    "/scripts.f7ce4e1245ec861a.js": "6a69d96a7c9da57962f3f7a403d346df19910766",
+    "/scripts.fe5c14a7abce036c.js": "9bb0f42026c5f3b911da4bfffcc92d0c9454d7d1",
     "/styles.4c3ebb08803e3976.css": "88898fa02f48b0c573227799bb03086b7ca00779"
   },
   "navigationUrls": [

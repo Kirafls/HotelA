@@ -28,14 +28,27 @@
                 <li class="nav-item"><a class="nav-link" routerLink="/lista">Consultar Reservas</a></li>
                 <li class="nav-item"><a class="nav-link" routerLink="/acerca">Acerca del hotel</a></li>
                 <li class="nav-item"><a class="nav-link" routerLink="/contacto">Contacto</a></li>
+               
            </ul> 
+           
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                   Dropdown button
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Accion 1</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          
            <div class="buscar"> 
             
               <input  class="form-control me-2" type="text" placeholder="Buscar reservacion" [(ngModel)]="texto" requered/>
               <button class="btn" style="margin-right: 5%; margin-bottom: 50%;" (click)="buscar()">
                 <i class="fas fa-search icon"></i>
               </button>
-          </div>  
+            </div>  
           </div>
         </div>
     </nav>

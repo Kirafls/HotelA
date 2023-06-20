@@ -49,6 +49,10 @@
    margin: 0 auto;
    margin-top: 2rem;
 }
+.tabla{
+   text-align: center;
+   margin-right: 50%;
+}
 
 img {
    width: 100%;

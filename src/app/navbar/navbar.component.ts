@@ -1,13 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, } from '@angular/core';
 import { ClientesService } from '../clientes/clientes.service';
 import { Cliente } from './../clientes/cliente.model';
 import { AlertifyService } from 'src/app/service/aletify.service';
+
+declare var $: any;
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  
   clientes!: Cliente[];
   texto:string='';
   bandera:boolean=false;
