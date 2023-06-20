@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { ClientesService } from '../clientes/clientes.service';
 import { Cliente } from './../clientes/cliente.model';
 import { AlertifyService } from 'src/app/service/aletify.service';
+import { AuthenticacionService} from 'src/app/authenticacion.service';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -12,7 +15,9 @@ export class NavbarComponent {
   texto:string='';
   bandera:boolean=false;
   posicion:any;
-  constructor(private miServicio: ClientesService,public alertifyconfim:AlertifyService,public alertifyservice:AlertifyService) { }
+  constructor(private userService: AuthenticacionService,
+    private router: Router,
+    private miServicio: ClientesService,public alertifyconfim:AlertifyService,public alertifyservice:AlertifyService) { }
   ngOnInit() {
     this.clientes = this.miServicio.getClientes();
   }
@@ -51,4 +56,15 @@ export class NavbarComponent {
     cerrar( ):void{
       this.bandera=false;
     }
+
+    onClick() {
+      this.userService.logout()
+        .then(() => {
+          this.router.navigate(['/login']);
+        })
+        .catch(error => console.log(error));
+    }
+
+
+
 }

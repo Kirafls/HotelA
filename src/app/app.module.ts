@@ -17,7 +17,17 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { HttpClientModule } from '@angular/common/http';
 import { DomseguroPipe } from './inicio/domseguro.pipe';
 import {MatDividerModule} from '@angular/material/divider';
-import { ContactoComponent } from './contacto/contacto.component'
+import { ContactoComponent } from './contacto/contacto.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+import { LoginComponent } from './login/login.component';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+
+import { RegisterComponent } from './register/register.component';
+import { PrincipalComponent } from './principal/principal.component';
 
 
 @NgModule({
@@ -28,6 +38,10 @@ import { ContactoComponent } from './contacto/contacto.component'
     NavbarComponent,
     DomseguroPipe,
     ContactoComponent,
+    LoginComponent,
+    RegisterComponent,
+    PrincipalComponent,
+    
    
   ],
   imports: [
@@ -42,8 +56,13 @@ import { ContactoComponent } from './contacto/contacto.component'
     MatTabsModule,
     HttpClientModule,
     MatDividerModule,
-    ReactiveFormsModule
-   
+    ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideDatabase(() => getDatabase()),
+    provideStorage(() => getStorage()),
+    AngularFireAuthModule,
+    
   ],
   providers: [
     AlertifyService

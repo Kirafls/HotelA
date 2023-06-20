@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "database-1362e": {
+      "hosting": {
+        "HotelA": [
+          "database-1362e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "database-1362e"
+  }
+}

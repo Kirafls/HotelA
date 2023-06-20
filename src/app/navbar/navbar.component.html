@@ -24,12 +24,21 @@
                 <li><a routerLink="/contacto">Contacto</a></li>
            </ul>            
         </nav>
+
         <div class="buscar">
             <input type="text" placeholder="Buscar reservacion" [(ngModel)]="texto" requered/>
       
             <button class="btn" (click)="buscar()">
               <i class="fas fa-search icon"></i>
             </button>
+          </div>
+
+          <div >
+            
+            <button (click)="onClick()" class="btn btn-primary me-md-2" type="button">
+              Cerrar Sesion
+            </button>
+            
           </div>
     </header>
   
@@ -72,6 +81,7 @@
       </div>
       
     </div>
+    
   <ng-template #error>
 
   </ng-template>
