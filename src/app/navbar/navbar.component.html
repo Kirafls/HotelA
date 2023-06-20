@@ -28,7 +28,13 @@
                 <li class="nav-item"><a class="nav-link" routerLink="/lista">Consultar Reservas</a></li>
                 <li class="nav-item"><a class="nav-link" routerLink="/acerca">Acerca del hotel</a></li>
                 <li class="nav-item"><a class="nav-link" routerLink="/contacto">Contacto</a></li>
-               
+                <li class="nav-item"><a class="nav-link" (click)="toggleGrayscale()" >Escala Grises</a></li>
+                <li class="nav-item"><a class="nav-link" (click)="highlightLinks()" >Resaltar</a></li>
+                <li class="nav-item"><a class="nav-link" (click)="toggleCursorSize()">Cambiar Cursor</a></li>
+                <li class="nav-item"><a class="nav-link" (click)="speakText()"-src="assets/img/play.png" alt="" width="25px" height="25px"></a></li>
+                <li class="nav-item"><a class="nav-link" (click)="pause()":src="assets/img/pause. png": alt="":width="25px" height="25px"></a></li>
+                <li class="nav-item"><a class="nav-link" (click)="resume()" src="assets/img/reanudar .png" alt="" width="25px" height="25px"></a></li>
+                <li class="nav-item"><a class="nav-link" (click)="stop()" src="assets/img/stop.png" alt="" width="25px" height="25px"></a></li>
            </ul> 
            
             <div class="dropdown">
