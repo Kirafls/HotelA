@@ -18,6 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { DomseguroPipe } from './inicio/domseguro.pipe';
 import {MatDividerModule} from '@angular/material/divider';
 import { ContactoComponent } from './contacto/contacto.component';
+import { LinkHighlighterComponent } from './link-highlighter/link-highlighter.component';
+import { CursorButtonComponent } from './cursor-button/cursor-button.component';
 import { DatePipe } from '@angular/common';
 //FIREBASE
 import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
@@ -44,6 +46,8 @@ import { ServiceWorkerModule } from '@angular/service-worker'
     NavbarComponent,
     DomseguroPipe,
     ContactoComponent,
+    LinkHighlighterComponent,
+    CursorButtonComponent,
    
   ],
   imports: [

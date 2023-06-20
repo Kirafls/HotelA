@@ -36,4 +36,11 @@ export class InicioComponent {
       }
     );
   }
+
+  //Escala Grises
+  isGrayscale = false;
+
+  toggleGrayscale() {
+    this.isGrayscale = !this.isGrayscale;
+  }
 }

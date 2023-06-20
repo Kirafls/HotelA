@@ -9,55 +9,30 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-       <div class="container-fluid" style="margin-left: 20px;">
-        <p style="color:wheat;font-family: 'Times New Roman', Times, serif;">Hotel QuintaReal 
-            <a href="#"><img class="logo" src="../../assets/favicon.ico" alt=""></a>
-        </p>
-       
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle 
-          navigation" style="margin-right: 10%;">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           <ul class="nav-links navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" routerLink="/inicio">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/alta">Reservar habitacion</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/lista">Consultar Reservas</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/acerca">Acerca del hotel</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/contacto">Contacto</a></li>
-                <li class="nav-item"><a class="nav-link" (click)="toggleGrayscale()" >Escala Grises</a></li>
-                <li class="nav-item"><a class="nav-link" (click)="highlightLinks()" >Resaltar</a></li>
-                <li class="nav-item"><a class="nav-link" (click)="toggleCursorSize()">Cambiar Cursor</a></li>
-                <li class="nav-item"><img class="nav-link" (click)="speakText()" src="assets/img/play.png" alt="" width="25px" height="25px"></li>
-                <li class="nav-item"><img class="nav-link" (click)="pause()" src="assets/img/pause.png" alt="" width="25px" height="25px"></li>
-                <li class="nav-item"><img class="nav-link" (click)="resume()" src="assets/img/reanudar.png" alt="" width="25px" height="25px"></li>
-                <li class="nav-item"><img class="nav-link" (click)="stop()" src="assets/img/stop.png" alt="" width="25px" height="25px"></li>
-           </ul> 
-           
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                   Dropdown button
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Accion 1</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </div>
-          
-           <div class="buscar"> 
-            
-              <input  class="form-control me-2" type="text" placeholder="Buscar reservacion" [(ngModel)]="texto" requered/>
-              <button class="btn" style="margin-right: 5%; margin-bottom: 50%;" (click)="buscar()">
-                <i class="fas fa-search icon"></i>
-              </button>
-            </div>  
-          </div>
+    <header class="header bg-dark">
+        <p style="color:wheat;font-family: 'Times New Roman', Times, serif;">Hotel QuintaReal</p>
+        <div class="logo">
+            <img src="../../assets/favicon.ico" alt="">
         </div>
-    </nav>
+        <nav>
+           <ul class="nav-links">
+                <li><a routerLink="/inicio">Inicio</a></li>
+                <li><a routerLink="/alta">Reservar habitacion</a></li>
+                <li><a routerLink="/lista">Consultar Reservas</a></li>
+                <li><a routerLink="/acerca">Acerca del hotel</a></li>
+                <li><a routerLink="/contacto">Contacto</a></li>
+           </ul>            
+        </nav>
+        <div class="buscar">
+            <input type="text" placeholder="Buscar reservacion" [(ngModel)]="texto" requered/>
+      
+            <button class="btn" (click)="buscar()">
+              <i class="fas fa-search icon"></i>
+            </button>
+          </div>
+    </header>
   
     <div *ngIf="bandera; else error" class="container position-relative">
       
@@ -101,3 +76,6 @@
   <ng-template #error>
 
   </ng-template>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
