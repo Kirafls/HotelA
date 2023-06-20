@@ -1,0 +1,113 @@
+{
+  "configVersion": 1,
+  "timestamp": 1687230191527,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.0bdc0e7d48b4cd4c.js",
+        "/manifest.webmanifest",
+        "/polyfills.fdaef94228ef8b7c.js",
+        "/runtime.b409c5b2dcb57096.js",
+        "/scripts.fe5c14a7abce036c.js",
+        "/styles.4c3ebb08803e3976.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/Autores/antonio.jpg",
+        "/assets/Autores/autor1.png",
+        "/assets/Autores/autor2.jpg",
+        "/assets/Autores/autor3.jpg",
+        "/assets/Autores/autor4.jpg",
+        "/assets/Autores/carlos.jpg",
+        "/assets/Autores/saul.jpg",
+        "/assets/Autores/uaa.png",
+        "/assets/favicon.ico",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-256x256.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/img/hotel1.jpg",
+        "/assets/img/hotel10.jpg",
+        "/assets/img/hotel2.jpg",
+        "/assets/img/hotel3.jpg",
+        "/assets/img/hotel4.jpg",
+        "/assets/img/hotel5.jpg",
+        "/assets/img/hotel6.jpg",
+        "/assets/img/hotel7.jpg",
+        "/assets/img/hotel8.jpg",
+        "/assets/img/hotel9.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/Autores/antonio.jpg": "964789da047e398013d9518e66ae8796bab9a383",
+    "/assets/Autores/autor1.png": "a6bb3835ccef2c324cb6bbb8ee383999ea32bbd6",
+    "/assets/Autores/autor2.jpg": "03d5872fdb61bee0c08fa78925a56a6d76d4c917",
+    "/assets/Autores/autor3.jpg": "b2282843c8147b161863ebae3c246679145e73a4",
+    "/assets/Autores/autor4.jpg": "863d19a0814b9d171c022d7d9fd90a1e06c483a1",
+    "/assets/Autores/carlos.jpg": "62cd25a67206e5849b92080adbbfebc7794a404c",
+    "/assets/Autores/saul.jpg": "3e16968a0db72bec897b9d7fdc640513aad8422a",
+    "/assets/Autores/uaa.png": "dc68c8c450907cb4c3f3f3fd0cbdbbe00257286a",
+    "/assets/favicon.ico": "624e80172c5e5ca61eedfa2445d2b8e68e5421e8",
+    "/assets/icons/icon-192x192.png": "85cde78c905e2c501ed84abce9cd28870fb7fa44",
+    "/assets/icons/icon-256x256.png": "a9da7e35c959ebf7edda46e03c6b30f4aa8e6d88",
+    "/assets/icons/icon-384x384.png": "f4dce2081ad6ad9a608dfa5c6cc704efbcdb759c",
+    "/assets/icons/icon-512x512.png": "731f48eae2e1db1050d2a9accc5bfe060f67afa4",
+    "/assets/img/hotel1.jpg": "d7ce0a83243be73681783d60fd72eb8a06cd2c69",
+    "/assets/img/hotel10.jpg": "46dff36801c21f880bffc00d415c39d8dca6dd60",
+    "/assets/img/hotel2.jpg": "3ad7757d2c8fedbfb37960ccf732e7655088e555",
+    "/assets/img/hotel3.jpg": "38a486a45e0028d29127ff73b3a6f6a14368560a",
+    "/assets/img/hotel4.jpg": "c638ecea8d1d834aee5b10721a08e2f0af1f10af",
+    "/assets/img/hotel5.jpg": "8fd5f4f3d053d6717f590dd4f017e1c77befc924",
+    "/assets/img/hotel6.jpg": "bb3e1240074b516f42f2f432ab449c801b517e9d",
+    "/assets/img/hotel7.jpg": "2971cee12ae11a4118f3aee80078252d8caf4b32",
+    "/assets/img/hotel8.jpg": "88b6b722d9e72fe9aa97d3e5828704d3bd023fde",
+    "/assets/img/hotel9.jpg": "58163b391b7a3a9f58e9594f1fbed7b9c421150a",
+    "/favicon.ico": "808c92019d50792a63a34be0567edbe93d66e359",
+    "/index.html": "3c5867bf21464d13a46330f735eb937dd5c6f27d",
+    "/main.0bdc0e7d48b4cd4c.js": "f83c799079380c129028ffc33555c90fc4721cea",
+    "/manifest.webmanifest": "00fc7b9e5d6e5207756462eb5805e6a2c167fded",
+    "/polyfills.fdaef94228ef8b7c.js": "11f03e81299084346477b1032f1798d3af593a3d",
+    "/runtime.b409c5b2dcb57096.js": "9c922992c0918e2b11192fa60445f8b889052986",
+    "/scripts.fe5c14a7abce036c.js": "9bb0f42026c5f3b911da4bfffcc92d0c9454d7d1",
+    "/styles.4c3ebb08803e3976.css": "88898fa02f48b0c573227799bb03086b7ca00779"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

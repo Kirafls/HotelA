@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -32,7 +32,8 @@ const firebaseConfig = {
   storageBucket: "database-1362e.appspot.com",
   messagingSenderId: "94224887601",
   appId: "1:94224887601:web:8e92ce3adb5dcbab09ca10"
-};
+};;
+import { ServiceWorkerModule } from '@angular/service-worker'
 
 
 @NgModule({
@@ -57,9 +58,8 @@ const firebaseConfig = {
     MatTabsModule,
     HttpClientModule,
     MatDividerModule,
-    ReactiveFormsModule,
-    provideFirebaseApp(() => initializeApp(firebaseConfig)),
-    provideFirestore(() => getFirestore())
+    ReactiveFormsModule
+   
   ],
   providers: [
     AlertifyService,

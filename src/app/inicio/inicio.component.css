@@ -1,4 +1,4 @@
-
+@media (min-width: 768px) {  
 .container {
     max-width: 80%;
     margin: 0 auto;
@@ -6,7 +6,7 @@
  }
  
  img {
-    width: 500px;
+    width: 100%;
     object-fit: contain;
     border-radius: 15px;
  }
@@ -40,3 +40,53 @@
    mat-tab-group{
       font-size: 18px;
    }
+}   
+   
+@media (max-width: 767.98px) { 
+      
+.container {
+   max-width: 80%;
+   margin: 0 auto;
+   margin-top: 2rem;
+}
+.tabla{
+   text-align: center;
+   margin-right: 50%;
+}
+
+img {
+   width: 100%;
+   object-fit: contain;
+   border-radius: 15px;
+}
+
+figure {
+   margin: 5;
+}
+.gallery-container {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   grid-gap: 1rem 3rem;
+   grid-template-rows: masonry;
+}
+.gallery-container {
+   column-count: 3;
+   column-gap: 20px 20px;
+   width: 500px;
+  }
+  
+  figure {
+   margin: 0;
+   display: inline-block;
+   margin-bottom: 0px;
+   width: 100%;
+  }
+
+  .yt{
+     text-align: center;
+     
+  }
+  mat-tab-group{
+     font-size: 18px;
+  }
+}

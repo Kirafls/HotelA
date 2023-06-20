@@ -5,7 +5,22 @@ h1{
     color: #252536;
     border-bottom: 3px solid #78788c
 }
-full-calendar{
-    margin: 5rem;
-    padding: 3rem;
+@media (min-width: 768px){
+    full-calendar{
+        text-align: center;
+        margin: 5rem;
+        padding: 3rem;
+    }
+}
+@media (max-width: 767.98px){
+    full-calendar{
+        text-align: center;
+        width: 97.25%;
+        margin: 0.75rem;
+        padding: 1.5rem;
+        overflow-x: auto;
+    }
+}
+table{
+    width: 100%;
 }
