@@ -122,3 +122,7 @@
     color: #ffbc0e;
     transform: scale(1.1);
 }
+
+.grayscale {
+    filter: grayscale(100%);
+  }

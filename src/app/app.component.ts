@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertifyService } from './service/aletify.service';
+import { ScreenReaderService } from './screen-reader.service';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,11 @@ export class AppComponent implements OnInit {
     this.alertifyservice.success("Hecho");
     
   }
-
   
+  //Escala Grises
+  isGrayscale = false;
+
+  toggleGrayscale() {
+    this.isGrayscale = !this.isGrayscale;
+  }
 }

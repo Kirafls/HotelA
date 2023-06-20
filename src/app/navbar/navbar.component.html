@@ -9,8 +9,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-    <header class="header bg-dark">
+    <header class="header bg-dark" [ngClass]="{'grayscale': isGrayscale}">
         <p style="color:wheat;font-family: 'Times New Roman', Times, serif;">Hotel QuintaReal</p>
         <div class="logo">
             <img src="../../assets/favicon.ico" alt="">
@@ -22,7 +23,17 @@
                 <li><a routerLink="/lista">Consultar Reservas</a></li>
                 <li><a routerLink="/acerca">Acerca del hotel</a></li>
                 <li><a routerLink="/contacto">Contacto</a></li>
-           </ul>            
+                <li><a  (click)="toggleGrayscale()" >Escala Grises</a></li>
+                <li><a  (click)="highlightLinks()" >Resaltar</a></li>
+                <li><a  (click)="toggleCursorSize()">Cambiar Cursor</a>
+                <li><img (click)="speakText()" src="assets/img/play.png" alt="" width="25px" height="25px"></li>
+                <li><img (click)="pause()" src="assets/img/pause.png" alt="" width="25px" height="25px"></li>
+                <li><img (click)="resume()" src="assets/img/reanudar.png" alt="" width="25px" height="25px"></li>
+                <li><img (click)="stop()" src="assets/img/stop.png" alt="" width="25px" height="25px"></li>
+                
+
+                  
+           </ul>        
         </nav>
         <div class="buscar">
             <input type="text" placeholder="Buscar reservacion" [(ngModel)]="texto" requered/>
@@ -75,3 +86,6 @@
   <ng-template #error>
 
   </ng-template>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

@@ -1,4 +1,6 @@
-
+.grayscale {
+   filter: grayscale(100%);
+ }
 .container {
     max-width: 80%;
     margin: 0 auto;

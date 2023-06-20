@@ -17,7 +17,9 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { HttpClientModule } from '@angular/common/http';
 import { DomseguroPipe } from './inicio/domseguro.pipe';
 import {MatDividerModule} from '@angular/material/divider';
-import { ContactoComponent } from './contacto/contacto.component'
+import { ContactoComponent } from './contacto/contacto.component';
+import { LinkHighlighterComponent } from './link-highlighter/link-highlighter.component';
+import { CursorButtonComponent } from './cursor-button/cursor-button.component'
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import { ContactoComponent } from './contacto/contacto.component'
     NavbarComponent,
     DomseguroPipe,
     ContactoComponent,
+    LinkHighlighterComponent,
+    CursorButtonComponent,
    
   ],
   imports: [

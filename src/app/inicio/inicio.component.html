@@ -1,5 +1,6 @@
+<div [ngClass]="{'grayscale': isGrayscale}"></div>>
 <div class="container">
-  <div>
+  <div [ngClass]="{'grayscale': isGrayscale}">
     <h1>Hotel QuintaReal</h1>
     <br>
     <h2>"Un lugar de descanso para tu aventura"</h2>
@@ -197,3 +198,4 @@
   <iframe width="560" height="315" [src]="video | domseguro:'https://www.youtube.com/embed/' " frame border="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-inpicture" allowfullscreen></iframe>
   </div>
+</div >
